@@ -84,27 +84,7 @@ MCP here stands for Model Context Protocol. This server exposes SSE endpoints fo
 
 Below are examples for configuring two popular clients: Claude Code and Gemini CLI.
 
-### Configure in Claude Code (VS Code extension / Desktop)
-
-Claude Code supports registering MCP servers. You can add this server either via settings UI/JSON (VS Code) or by editing the Claude Desktop config. The general configuration uses a command-based server (start our Node process) or an SSE server (connect to an existing URL). This project prints an SSE URL at runtime; both approaches are shown.
-
--   Command-based (Claude starts the server):
-
-```json
-{
-    "mcpServers": {
-        "smyth-docker-sandbox": {
-            "command": "node",
-            "args": ["D:/SmythOS/demo-agents/SmythDockerSandbox/dist/index.js"],
-            "env": {
-                "NODE_ENV": "production"
-            }
-        }
-    }
-}
-```
-
--   SSE-based (connect to a running process): first run `npm start` to get the URL, then configure:
+### Configure in Claude Code
 
 ```json
 {
@@ -129,7 +109,7 @@ After updating settings, restart Claude Code/Desktop.
 
 ### Configure in Gemini CLI
 
-Gemini CLI can also connect to MCP servers. Create or edit `settings.json` and add an entry for this server. You can either let Gemini CLI spawn the server via a command, or connect to the SSE URL of a server you’ve already started.
+Create or edit `settings.json` and add an entry for this server. 
 
 User-scoped config locations:
 
@@ -138,21 +118,6 @@ User-scoped config locations:
 
 -   Command-based configuration:
 
-```json
-{
-    "mcpServers": {
-        "smyth-docker-sandbox": {
-            "command": "node",
-            "args": ["D:/SmythOS/demo-agents/SmythDockerSandbox/dist/index.js"],
-            "env": {
-                "NODE_ENV": "production"
-            }
-        }
-    }
-}
-```
-
--   SSE-based configuration (connect to a running server):
 
 ```json
 {
