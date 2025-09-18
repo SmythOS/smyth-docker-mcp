@@ -1,0 +1,12 @@
+{
+    "default": {
+        "echo": "",
+        "openai": "",
+        "anthropic": "",
+        "googleai": "",
+        "groq": "",
+        "togetherai": "",
+        "xai": "",
+        "deepseek": ""
+    }
+}
