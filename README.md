@@ -2,7 +2,11 @@
 
 A Model Context Protocol (MCP) server built with `@smythos/sdk` that can spawn an ephemeral Linux sandbox using Docker and execute commands inside it via an interactive TTY.
 
+## Claude code demo
+https://github.com/user-attachments/assets/b7b9b8c9-29da-43d1-8414-a45762245067
 
+
+## Gemini-cli demo
 https://github.com/user-attachments/assets/db109ab2-65e2-40e8-be2b-fd0f01e4a217
 
 
