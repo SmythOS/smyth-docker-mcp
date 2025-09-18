@@ -2,9 +2,11 @@
 
 A Model Context Protocol (MCP) server built with `@smythos/sdk` that can spawn an ephemeral Linux sandbox using Docker and execute commands inside it via an interactive TTY.
 
-https://www.youtube.com/watch?v=JgRRSQ1_YAE
 
-[![Smyth Docker MCP](https://img.youtube.com/vi/JgRRSQ1_YAE/0.jpg)](https://www.youtube.com/watch?v=JgRRSQ1_YAE)
+https://github.com/user-attachments/assets/db109ab2-65e2-40e8-be2b-fd0f01e4a217
+
+
+
 
 **Key Features:**
 
